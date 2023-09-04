@@ -23,6 +23,7 @@ main {
     grid-template-columns: repeat(3, 50px);
     grid-gap: 10px;
     justify-content: center;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -87,5 +88,35 @@ main {
 }
 
 #generate-button {
+    font-size: 70%;
+}
+
+.level button {
+    margin: .1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: .7rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
+
+
+}
+
+.level button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#level-1 {
+    font-size: 70%;
+}
+
+#level-2 {
     font-size: 70%;
 }
