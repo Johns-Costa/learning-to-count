@@ -4,6 +4,11 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
+    font-family: cursive;
+    color: #ffff;
+    font-size: 150%;
+    background-color: #2F4F4F;
+    line-height: 0.7em;
 }
 
 main {
@@ -17,6 +22,8 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .pattern-dot {
@@ -30,7 +37,21 @@ main {
     align-items: center;
 }
 
+.caterpillar {
+    display: flex;
+    align-items: center;
+
+}
+
+.level {
+    display: none;
+}
+
 .play-screen {
+    display: none;
+}
+
+.level2 {
     display: none;
 }
 
@@ -46,5 +67,25 @@ main {
     border-radius: .5rem;
     outline: none;
     border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
 
+
+}
+
+.main-menu button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#check {
+    font-size: 70%;
+}
+
+#generate-button {
+    font-size: 70%;
 }

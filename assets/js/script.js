@@ -6,12 +6,34 @@ const playScreen = document.querySelector('.play-screen');
 const mainMenu = document.querySelector('.main-menu');
 const playBtn = document.getElementById("play-btn");
 const rulesBtn = document.getElementById("rules-btn");
+const level2 = document.getElementById("level-2");
+const playLevel2 = document.querySelector(".level2");
+const level1 = document.getElementById("level-1");
+const level = document.querySelector(".level");
+
 
 
 playBtn.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playScreen.style.display = 'block';
+    playLevel2.style.display = 'none';
+    level.style.display = 'block';
+
 });
+
+level2.addEventListener("click", () => {
+    mainMenu.style.display = 'none';
+    playScreen.style.display = 'none';
+    playLevel2.style.display = 'block';
+});
+
+level1.addEventListener("click", () => {
+    mainMenu.style.display = 'none';
+    playLevel2.style.display = 'none';
+    playScreen.style.display = 'block';
+});
+
+
 
 function generateRandomNumbers(count) {
     let numbers = [];
@@ -27,21 +49,22 @@ function generateRandomNumbers(count) {
 function addDotToPattern(dotIndex) {
     selectedPattern.push(dotIndex);
     document.querySelector(`[divElement="${dotIndex}"]`);
+
     console.log(selectedPattern);
 }
+
 function clearPattern() {
     selectedPattern = [];
     let dots = document.querySelectorAll('.pattern-dot');
     dots.forEach(dot => dot.style.backgroundColor = '#ccc');
     message.innerText = '';
 }
+
 function checkPattern() {
     if (selectedPattern.join() === pattern.join()) {
         message.textContent = 'Pattern unlocked!';
-
     } else {
         message.textContent = 'Pattern incorrect. Try again.';
-
     }
 }
 
@@ -69,6 +92,12 @@ patternGrid.addEventListener('click', event => {
         if (!isNaN(dotIndex)) {
             console.log(event.target);
             addDotToPattern(parseInt(event.target.innerText));
+            var x = Math.floor(Math.random() * 256);
+            var y = Math.floor(Math.random() * 256);
+            var z = Math.floor(Math.random() * 256);
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            console.log(bgColor);
+            event.target.style.backgroundColor = bgColor;
         }
     }
 });
