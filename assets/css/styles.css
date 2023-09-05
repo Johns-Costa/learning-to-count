@@ -12,7 +12,7 @@ body {
 }
 
 footer {
-  margin-top: auto;
+  margin-top: 20px;
 }
 
 main {
@@ -44,6 +44,7 @@ main {
 
 .level {
   display: none;
+  margin-top: 20px;
 }
 
 .play-screen {
