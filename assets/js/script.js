@@ -15,6 +15,8 @@ let level2 = document.getElementById("level-2");
 const playLevel2 = document.querySelector(".level2");
 let level1 = document.getElementById("level-1");
 const level = document.querySelector(".level");
+let home = document.getElementById("home");
+const homebtn = document.querySelector(".home");
 
 
 
@@ -23,6 +25,7 @@ playBtn.addEventListener("click", () => {
     playScreen.style.display = 'block';
     playLevel2.style.display = 'none';
     level.style.display = 'block';
+    homebtn.style.display = 'block';
     newGame();
     level1.classList.toggle("is-active");
 });
@@ -47,7 +50,13 @@ level1.addEventListener("click", () => {
     level2.classList.toggle("is-active");
 });
 
-
+home.addEventListener("click", () => {
+    mainMenu.style.display = 'block';
+    playScreen.style.display = 'none';
+    playLevel2.style.display = 'none';
+    level.style.display = 'none';
+    homebtn.style.display = 'none';
+});
 
 //Level 1
 

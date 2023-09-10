@@ -64,7 +64,7 @@ main {
 
 .level {
     display: none;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .play-screen {
@@ -137,7 +137,27 @@ main {
     color: #2F4F4F;
 }
 
-.level button:active {
+.home {
+    display: none;
+    margin-top: 30px;
+}
+
+.home button {
+    margin: .1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: .7rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
+}
+
+.home button:hover {
     background-color: white;
     color: #2F4F4F;
 }
@@ -161,7 +181,9 @@ main {
     color: #2F4F4F;
 }
 
-
+#home {
+    font-size: 70%;
+}
 
 .caterpillar {
     display: flex;
