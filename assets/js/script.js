@@ -22,12 +22,13 @@ const homebtn = document.querySelector(".home");
 
 playBtn.addEventListener("click", () => {
     mainMenu.style.display = 'none';
-    playScreen.style.display = 'block';
+    playScreen.style.display = 'flex';
     playLevel2.style.display = 'none';
     level.style.display = 'block';
     homebtn.style.display = 'block';
     newGame();
-    level1.classList.toggle("is-active");
+    level1.classList.toggle('is-active');
+
 });
 
 level2.addEventListener("click", () => {
@@ -35,23 +36,33 @@ level2.addEventListener("click", () => {
     playScreen.style.display = 'none';
     playLevel2.style.display = 'block';
     newGame2();
-    level2.classList.toggle("is-active");
-    level1.classList.toggle("is-active");
+    level2.classList.toggle('is-active');
+    if (level1.classList.toggle('is-active')) {
+        level1.classList.remove('is-active');
+        level2.classList.toggle('is-active');
+        newGame2(false);
+    }
+
 });
-
-
 
 level1.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playLevel2.style.display = 'none';
     playScreen.style.display = 'block';
     newGame();
-    level1.classList.toggle("is-active");
-    level2.classList.toggle("is-active");
+    level1.classList.toggle('is-active');
+    if (level2.classList.toggle('is-active')) {
+        level2.classList.remove('is-active');
+        level1.classList.toggle('is-active');
+    }
+
+
 });
 
+
+
 home.addEventListener("click", () => {
-    mainMenu.style.display = 'block';
+    mainMenu.style.display = 'flex';
     playScreen.style.display = 'none';
     playLevel2.style.display = 'none';
     level.style.display = 'none';
