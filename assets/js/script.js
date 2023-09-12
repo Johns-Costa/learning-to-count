@@ -34,7 +34,7 @@ playBtn.addEventListener("click", () => {
 level2.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playScreen.style.display = 'none';
-    playLevel2.style.display = 'block';
+    playLevel2.style.display = 'flex';
     newGame2();
     level2.classList.toggle('is-active');
     if (level1.classList.toggle('is-active')) {
@@ -48,7 +48,7 @@ level2.addEventListener("click", () => {
 level1.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playLevel2.style.display = 'none';
-    playScreen.style.display = 'block';
+    playScreen.style.display = 'flex';
     newGame();
     level1.classList.toggle('is-active');
     if (level2.classList.toggle('is-active')) {

@@ -426,3 +426,46 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* footer */
+
+footer {
+    background-color: #2F4F4F;
+    margin: 0;
+    position: sticky;
+
+    padding: 20px 0;
+
+}
+
+footer p {
+    background-color: #2F4F4F;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+
+}
+
+
+footer p a {
+    color: white;
+}
+
+.social-networks {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 100%;
+    margin: 0;
+    padding: 1.5% 3%;
+    color: white;
+}
