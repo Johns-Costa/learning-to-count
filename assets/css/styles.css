@@ -69,6 +69,7 @@ main {
 
 .play-screen {
     display: none;
+    flex-direction: column;
 }
 
 .level2 {
@@ -168,7 +169,7 @@ main {
 }
 
 #level-1.is-active {
-    background-color: blue;
+    background-color: white;
     color: #2F4F4F;
 }
 
@@ -177,7 +178,7 @@ main {
 }
 
 #level-2.is-active {
-    background-color: blue;
+    background-color: white;
     color: #2F4F4F;
 }
 
@@ -186,8 +187,6 @@ main {
 }
 
 .caterpillar {
-    display: flex;
-    flex-direction: column;
     height: 13rem;
     width: fit-content;
 }

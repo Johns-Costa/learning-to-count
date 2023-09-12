@@ -176,14 +176,20 @@ patternGrid.addEventListener('click', event => {
     if (event.target.innerText != 'Check' && event.target.innerText != 'new game') {
         let dotIndex = parseInt(event.target.getAttribute('data-index'));
         if (!isNaN(dotIndex)) {
-            console.log(event.target);
+            console.log(event.target.innerText);
+            let bodyPart = document.getElementById('body-part-' + event.target.innerText);
+            console.log(bodyPart);
+            const randomInt = (min, max) => {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            };
             addDotToPattern(parseInt(event.target.innerText));
-            var x = Math.floor(Math.random() * 256);
-            var y = Math.floor(Math.random() * 256);
-            var z = Math.floor(Math.random() * 256);
-            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            var h = randomInt(0, 360);
+            var s = randomInt(70, 100);
+            var l = randomInt(40, 90);
+            var bgColor = `hsl(${h},${s}%,${l}%)`;
             console.log(bgColor);
             event.target.style.backgroundColor = bgColor;
+            bodyPart.style.backgroundColor = bgColor;
         }
     }
 });
