@@ -1,39 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# _Learn to count_
 
 ---
 
-Happy coding!
+[Learn to count](https://johns-costa.github.io/learning-to-count/) is a website for any child that wants to learn the numbers from 1 to 10 and 1 to 20. Watch the numbers change while pressed and the caterpillar as well!
+
+
+![site on different devices](/assets/images/am-i-responsive.png)
+
+---
+
+## Technologies used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/javascript)
+- [Font Awesome icons](https://fontawesome.com/)
+- [Google fonts](https://fonts.google.com/)
+
+---
+
+## User stories
+
+- As a first time visitor, I want to understand the the website and it's game, so I can know the rules and start playing the game.
+- As a first time visitor, I want to be able to easily navigate through the website, so I can find the information I am looking for.
+- As a first time visitor, I want to see that the game is easy to handle and the interaction is fun, so I can learn the numbers quickly.
+- As a user, I want to have fun with colors changing in the numbers and the caterpillar, so I can enjoy while learning.
+- As a user, I want to be able to check the correct and incorrect answers, so I can know my progress.
+- As a mobile device and tablet user, I want the game to be responsive, so I can use my phone or tablet to keep learning.
+
+---
