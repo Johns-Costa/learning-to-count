@@ -20,7 +20,7 @@ const score = document.querySelector('.score-area');
 //Play Button
 playBtn.addEventListener("click", () => {
     mainMenu.style.display = 'none';
-    playScreen.style.display = 'flex';
+    playScreen.style.display = 'grid';
     playLevel2.style.display = 'none';
     level.style.display = 'block';
     homebtn.style.display = 'block';
@@ -48,6 +48,7 @@ level1.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playLevel2.style.display = 'none';
     playScreen.style.display = 'flex';
+    score.style.display = 'none';
     newGame();
     level1.classList.toggle('is-active');
     if (level2.classList.toggle('is-active')) {
