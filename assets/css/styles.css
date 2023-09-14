@@ -26,6 +26,7 @@ main {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    min-width: 550px;
 }
 
 .pattern-grid2 {
@@ -36,6 +37,7 @@ main {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    min-width: 550px;
 
 }
 
