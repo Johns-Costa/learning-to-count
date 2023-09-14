@@ -57,7 +57,7 @@
   - Footer contains social media links that open in a new tab.
   - Under the social media links there is a copyright sign with my github link.
 
-  ![Footer](assets/images/footer.png)
+  ![Footer](assets/images/Footer.png)
 
 ---
 - ##### Level 1
