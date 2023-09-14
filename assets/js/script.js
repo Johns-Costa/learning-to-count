@@ -6,7 +6,7 @@ const message2 = document.getElementById('message2');
 let selectedPattern = [];
 let selectedPattern2 = [];
 const pattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const pattern2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+let pattern2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 const playScreen = document.querySelector('.play-screen');
 const mainMenu = document.querySelector('.main-menu');
 const playBtn = document.getElementById("play-btn");
@@ -19,7 +19,7 @@ let home = document.getElementById("home");
 const homebtn = document.querySelector(".home");
 
 
-
+//Play Button
 playBtn.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playScreen.style.display = 'flex';
@@ -31,6 +31,7 @@ playBtn.addEventListener("click", () => {
 
 });
 
+//Level 2 Button
 level2.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playScreen.style.display = 'none';
@@ -40,11 +41,10 @@ level2.addEventListener("click", () => {
     if (level1.classList.toggle('is-active')) {
         level1.classList.remove('is-active');
         level2.classList.toggle('is-active');
-        newGame2(false);
     }
-
 });
 
+// Level 1 Button
 level1.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playLevel2.style.display = 'none';
@@ -55,12 +55,10 @@ level1.addEventListener("click", () => {
         level2.classList.remove('is-active');
         level1.classList.toggle('is-active');
     }
-
-
 });
 
 
-
+//Home Button
 home.addEventListener("click", () => {
     mainMenu.style.display = 'flex';
     playScreen.style.display = 'none';
@@ -70,6 +68,7 @@ home.addEventListener("click", () => {
 });
 
 //Level 1
+
 
 function generateRandomNumbers(count) {
     let numbers = [];
@@ -94,6 +93,10 @@ function clearPattern() {
     let dots = document.querySelectorAll('.pattern-dot');
     dots.forEach(dot => dot.style.backgroundColor = '#ccc');
     message.innerText = '';
+    var elements = document.getElementsByClassName("body");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = "lightgreen";
+    }
 }
 
 function checkPattern() {
@@ -139,10 +142,13 @@ function addDotToPattern2(dotIndex2) {
 
 function clearPattern2() {
     selectedPattern2 = [];
-    delete dots;
     let dots2 = document.querySelectorAll('.pattern-dot2');
     dots2.forEach(dot2 => dot2.style.backgroundColor = '#ccc');
     message2.innerText = '';
+    var elements = document.getElementsByClassName("body");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = "lightgreen";
+    }
 }
 
 
@@ -155,6 +161,7 @@ function checkPattern2() {
 }
 
 function newGame2() {
+    clearPattern();
     clearPattern2();
     let randomNumbers2 = generateRandomNumbers2(20);
     console.log(randomNumbers2);
@@ -201,17 +208,23 @@ document.getElementById('check').addEventListener('click', checkPattern);
 //EventListners Level 2
 
 patternGrid2.addEventListener('click', event => {
-    if (event.target.innerText != 'Check' && event.target.innerText != 'new game') {
-        let dotIndex2 = parseInt(event.target.getAttribute('data-index'));
+    if (event.target.innerText != 'Check2' && event.target.innerText != 'New Game') {
+        let dotIndex2 = parseInt(event.target.getAttribute('data-index2'));
         if (!isNaN(dotIndex2)) {
-            console.log(event.target);
-            addDotToPattern2(parseInt(event.target.innerText));
-            var x = Math.floor(Math.random() * 256);
-            var y = Math.floor(Math.random() * 256);
-            var z = Math.floor(Math.random() * 256);
-            var bgColor2 = "rgb(" + x + "," + y + "," + z + ")";
+            console.log(event.target.innerText);
+            let bodyPart = document.getElementById('body-part2-' + event.target.innerText);
+            console.log(bodyPart);
+            const randomInt = (min, max) => {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            };
+            addDotToPattern(parseInt(event.target.innerText));
+            var h = randomInt(0, 360);
+            var s = randomInt(70, 100);
+            var l = randomInt(40, 90);
+            var bgColor2 = `hsl(${h},${s}%,${l}%)`;
             console.log(bgColor2);
             event.target.style.backgroundColor = bgColor2;
+            bodyPart.style.backgroundColor = bgColor2;
         }
     }
 });

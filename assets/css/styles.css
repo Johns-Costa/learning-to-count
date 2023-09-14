@@ -11,9 +11,6 @@ body {
     line-height: 0.7em;
 }
 
-footer {
-    margin-top: 20px;
-}
 
 main {
     display: flex;
@@ -24,8 +21,8 @@ main {
 
 .pattern-grid {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 20px;
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
@@ -33,11 +30,13 @@ main {
 
 .pattern-grid2 {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, 50px);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+
 }
 
 .pattern-dot {
@@ -49,6 +48,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 4px solid #2F4F4F;
 }
 
 .pattern-dot2 {
@@ -60,6 +60,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 4px solid #2F4F4F;
+}
+
+#divhidden {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2F4F4F;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #2F4F4F;
 }
 
 .level {
@@ -70,10 +83,12 @@ main {
 .play-screen {
     display: none;
     flex-direction: column;
+    justify-content: center;
 }
 
 .level2 {
     display: none;
+    justify-content: center;
 }
 
 .main-menu {
@@ -103,19 +118,23 @@ main {
 
 #check {
     font-size: 70%;
+    border: 4px solid white;
 }
 
 #generate-button {
     font-size: 70%;
+    border: 4px solid white;
 }
 
 
 #check2 {
     font-size: 70%;
+    border: 4px solid white;
 }
 
 #generate-button2 {
     font-size: 70%;
+    border: 4px solid white;
 }
 
 .level button {
@@ -188,7 +207,14 @@ main {
 
 .caterpillar {
     height: 13rem;
-    width: fit-content;
+    margin-left: 60px;
+    padding: 50px;
+
+}
+
+.caterpillar2 {
+    height: 17rem;
+    padding-top: 70px;
 }
 
 .cater {
@@ -298,6 +324,75 @@ main {
     z-index: -9;
 }
 
+.body .p10 {
+    top: 145px;
+    left: 245px;
+    width: 70px;
+    z-index: -10;
+}
+
+.body .p11 {
+    top: 160px;
+    left: 230px;
+    width: 70px;
+    z-index: -11;
+}
+
+.body .p12 {
+    top: 170px;
+    left: 210px;
+    width: 70px;
+    z-index: -12;
+}
+
+.body .p13 {
+    top: 180px;
+    left: 190px;
+    width: 70px;
+    z-index: -13;
+}
+
+.body .p14 {
+    top: 190px;
+    left: 170px;
+    width: 70px;
+    z-index: -14;
+}
+
+.body .p15 {
+    top: 190px;
+    left: 140px;
+    width: 70px;
+    z-index: -15;
+}
+
+.body .p16 {
+    top: 190px;
+    left: 110px;
+    width: 70px;
+    z-index: -16;
+}
+
+.body .p17 {
+    top: 190px;
+    left: 80px;
+    width: 70px;
+    z-index: -17;
+}
+
+.body .p18 {
+    top: 190px;
+    left: 50px;
+    width: 70px;
+    z-index: -18;
+}
+
+.body .p19 {
+    top: 190px;
+    left: 20px;
+    width: 70px;
+    z-index: -19;
+}
 
 .antenna-l {
     position: absolute;
@@ -373,6 +468,8 @@ main {
     top: 130px;
     left: 175px;
 }
+
+
 
 /* Modal */
 
