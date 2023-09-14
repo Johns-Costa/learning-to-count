@@ -46,8 +46,69 @@
   - The Rules button leads the user the the rules modal.
   - The Buttons have hovering effects in order to be more interactive.
 
-  ![Play and Rules Buttons](assets/images/Main-buttons-desktop.png)
-  ![Play and Rules Buttons](assets/images/Main-buttons-tablet.png)
-  ![Play and Rules Buttons](assets/images/Main-buttons-mobile.png)
+  ![Play and Rules Buttons desktop](assets/images/Main-buttons-desktop.png)
+  ![Play and Rules Buttons tablet](assets/images/Main-buttons-tablet.png)
+  ![Play and Rules Buttons mobile](assets/images/Main-buttons-mobile.png)
 
 ---
+
+- ##### Footer
+
+  - Footer contains social media links that open in a new tab.
+  - Under the social media links there is a copyright sign with my github link.
+
+  ![Footer](assets/images/footer.png)
+
+---
+- ##### Level 1
+  
+- ##### Butons
+  - At the center top there are 3 buttons positioned as a pyramid:
+    - Main menu, that leads to the main menu.
+    - Level 1, that lead to a new game at level 1.
+    - Level 2, that lead to a new game at level 2.
+
+- ##### Play area
+  - Under the buttons we find the playing area where the numbers 1 to 10 are randomly placed.
+  - Two extra circles are present:
+    - Check, that allows the user to check if the selected pattern is correct.
+    - New Game, the allows the user to play the game again with nrw randomly placed numbers.
+  - The numbers change color when pressed.
+
+- ##### Caterpillar
+  -Under the play area there is a Caterpillar with 10 body parts.
+  -The body part changes color when the number on the pattern is chosen.
+
+
+  ![Level 1 desktop](assets/images/Level-1-desktop.png)
+  ![Level 1 tablet](assets/images/Level-1-tablet.png)
+  ![Level 1 mobile](assets/images/Level-1-mobile.png)
+
+---
+
+- ##### Level 2
+  
+- ##### Butons
+
+  - At the center top there are 3 buttons positioned as a pyramid:
+    - Main menu, that leads to the main menu.
+    - Level 1, that lead to a new game at level 1.
+    - Level 2, that lead to a new game at level 2.
+
+- ##### Play area
+
+  - Under the buttons we find the playing area where the numbers 1 to 20 are randomly placed.
+  - Two extra circles are present:
+    - Check, that allows the user to check if the selected pattern is correct.
+    - New Game, the allows the user to play the game again with nrw randomly placed numbers.
+  - The numbers change color when pressed.
+
+- ##### Caterpillar
+
+  -Under the play area there is a Caterpillar with 20 body parts.
+  -The body part changes color when the number on the pattern is chosen.
+
+  ![Level 2 desktop](assets/images/Level-2-desktop.png)
+  ![Level 2 tablet](assets/images/Level-2-tablet.png)
+  ![Level 2 mobile](assets/images/Level-2-mobile.png)
+  
