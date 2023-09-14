@@ -76,8 +76,8 @@
   - The numbers change color when pressed.
 
 - ##### Caterpillar
-  -Under the play area there is a Caterpillar with 10 body parts.
-  -The body part changes color when the number on the pattern is chosen.
+  - Under the play area there is a Caterpillar with 10 body parts.
+  - The body part changes color when the number on the pattern is chosen.
 
 
   ![Level 1 desktop](assets/images/Level-1-desktop.png)
@@ -105,8 +105,8 @@
 
 - ##### Caterpillar
 
-  -Under the play area there is a Caterpillar with 20 body parts.
-  -The body part changes color when the number on the pattern is chosen.
+  - Under the play area there is a Caterpillar with 20 body parts.
+  - The body part changes color when the number on the pattern is chosen.
 
   ![Level 2 desktop](assets/images/Level-2-desktop.png)
   ![Level 2 tablet](assets/images/Level-2-tablet.png)
