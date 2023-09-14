@@ -154,8 +154,8 @@ function clearPattern2() {
 
 function checkPattern2() {
     if (selectedPattern2.join() === pattern2.join()) {
-        alert(`You got it wrong. Try again! :)`);
-        incrementWrongAnswer();
+        alert("Congratulations! You got it right!");
+        incrementScore();
     } else {
         alert(`You got it wrong. Try again! :)`);
         incrementWrongAnswer();
@@ -219,7 +219,7 @@ patternGrid2.addEventListener('click', event => {
             const randomInt = (min, max) => {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             };
-            addDotToPattern(parseInt(event.target.innerText));
+            addDotToPattern2(parseInt(event.target.innerText));
             var h = randomInt(0, 360);
             var s = randomInt(70, 100);
             var l = randomInt(40, 90);

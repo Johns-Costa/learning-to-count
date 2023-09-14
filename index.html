@@ -24,188 +24,107 @@
         <h1>Learn to Count</h1>
     </header>
     <main>
-
-        <!--Main Menu-->
-
-
-        <div class="main-menu">
-            <button id="play-btn">Play</button>
-            <button id="rules-btn">Rules</button>
+        <section>
+            <!--Main Menu-->
+            <div class="main-menu">
+                <button id="play-btn" aria-label="Play the game">Play</button>
+                <button id="rules-btn" aria-label="Game rules">Rules</button>
 
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
+                <!-- The Modal -->
+                <section>
+                    <div id="myModal" class="modal">
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Game Title: Learn to Count</p>
-                    <p>-------</p>
-                    <p> Objective: The objective of the game is to arrange a set of randomly displayed numbers in the
-                        correct numerical order.</p>
-                    <p>-------</p>
-                    <p>Rules:</p>
-                    <ol>
-                        <li>The game begins with the player or team selecting Level 1.</li>
-                        <li>The numbers 1 to 10 (or 20 depending on the level selected) will appear on the screen in a
-                            random order.</li>
-                        <li>The player or team must arrange these numbers in ascending order, as quickly as possible.
-                        </li>
-                        <li>Simply tap or click on it to select a number.</li>
-                        <li>Continue arranging the numbers until they are all in the correct order.</li>
-                        <li>If playing with a timer, the player or team can try to complete the task within a certain
-                            time limit for an added challenge.</li>
-                        <li>Once all numbers are selected, a player should press check to see if the game is won!</li>
-                    </ol>
-                    <p>-------</p>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
-
-    <!--Buttons-->
-    <div class="">
-
-        <div class="home">
-            <button id="home">Main page</button>
-
-        </div>
-
-        <div class="level">
-            <button class="btn" id="level-1">Level 1</button>
-            <button class="btn" id="level-2"> Level 2</button>
-        </div>
-        <div class="score-area">
-            <p class="scores">Correct Answers <span id="score">0</span></p>
-            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        </div>
-
-        <!--Level 1-->
-
-        <div class="play-screen">
-            <div class="pattern-grid" id="patternGrid">
-                <div id="div1" class="pattern-dot" data-index="1"></div>
-                <div id="div2" class="pattern-dot" data-index="2"></div>
-                <div id="div3" class="pattern-dot" data-index="3"></div>
-                <div id="div4" class="pattern-dot" data-index="4"></div>
-                <div id="div5" class="pattern-dot" data-index="5"></div>
-                <div id="div6" class="pattern-dot" data-index="6"></div>
-                <div id="div7" class="pattern-dot" data-index="7"></div>
-                <div id="div8" class="pattern-dot" data-index="8"></div>
-                <div id="check" class="pattern-dot" data-index="refresh">Check</div>
-                <div id="div9" class="pattern-dot" data-index="9"></div>
-                <div id="div10" class="pattern-dot" data-index="10"></div>
-                <div id="generate-button" class="pattern-dot" data-index="refresh">New Game</div>
-
-
-                <!--Caterpillar-->
-
-            </div>
-
-            <div class="caterpillar">
-
-
-                <div class="cater">
-                    <div class="body" id="body-part-1" data-index="1">
-                        <div class="face"></div>
-
-                        <div class="body p1" id="body-part-2" data-index="2"></div>
-                        <div class="body p2" id="body-part-3" data-index="3"></div>
-                        <div class="body p3" id="body-part-4" data-index="4"></div>
-                        <div class="body p4" id="body-part-5" data-index="5"></div>
-                        <div class="body p5" id="body-part-6" data-index="6"></div>
-                        <div class="body p6" id="body-part-7" data-index="7"></div>
-                        <div class="body p7" id="body-part-8" data-index="8"></div>
-                        <div class="body p8" id="body-part-9" data-index="9"></div>
-                        <div class="body p9" id="body-part-10" data-index="10"></div>
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Game Title: Learn to Count</p>
+                            <p>-------</p>
+                            <p> Objective: The objective of the game is to arrange a set of randomly displayed numbers
+                                in the correct numerical order.</p>
+                            <p>-------</p>
+                            <p>Rules:</p>
+                            <ol>
+                                <li>The game begins with the player or team selecting Level 1.</li>
+                                <li>The numbers 1 to 10 (or 20 depending on the level selected) will appear on the
+                                    screen in a random order.</li>
+                                <li>The player or team must arrange these numbers in ascending order, as quickly as
+                                    possible.</li>
+                                <li>Simply tap or click on it to select a number.</li>
+                                <li>Continue arranging the numbers until they are all in the correct order.</li>
+                                <li>Once all numbers are selected, a player should press check to see if the game is
+                                    won!</li>
+                                <li>The score of correct and incorrect answers will increase accordingly everytime the
+                                    button "Check" is pressed</li>
+                                <li>Watch the caterpillar change color while the diferent numbers are pressed</li>
+                            </ol>
+                            <p>-------</p>
+                        </div>
 
                     </div>
 
-                    <div class="antenna-l"></div>
-                    <div class="antenna-r"></div>
+            </div>
+        </section>
 
-                    <div class="design">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+        <!--Buttons-->
+        <div class="">
 
-                </div>
+            <div class="home">
+                <button id="home">Main page</button>
+
             </div>
 
-        </div>
+            <div class="level">
+                <button class="btn" id="level-1" aria-label="Play level 1, from 1 to 10">Level 1</button>
+                <button class="btn" id="level-2" aria-label="Play level 2, from 1 to 20"> Level 2</button>
+            </div>
+            <div class="score-area">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
 
-        <!--Level 2-->
+            <section>
 
-        <div class="level2">
 
-            <div class="pattern-grid2" id="patternGrid2">
+                <!--Level 1-->
 
-                <div id="divs1" class="pattern-dot2" data-index2="1"></div>
-                <div id="divs2" class="pattern-dot2" data-index2="2"></div>
-                <div id="divs3" class="pattern-dot2" data-index2="3"></div>
-                <div id="divs4" class="pattern-dot2" data-index2="4"></div>
-                <div id="divs5" class="pattern-dot2" data-index2="5"></div>
-                <div id="divs6" class="pattern-dot2" data-index2="6"></div>
-                <div id="divs7" class="pattern-dot2" data-index2="7"></div>
-                <div id="divs8" class="pattern-dot2" data-index2="8"></div>
-                <div id="divs9" class="pattern-dot2" data-index2="9"></div>
-                <div id="divs10" class="pattern-dot2" data-index2="10"></div>
-                <div id="divs11" class="pattern-dot2" data-index2="11"></div>
-                <div id="divs12" class="pattern-dot2" data-index2="12"></div>
-                <div id="divs13" class="pattern-dot2" data-index2="13"></div>
-                <div id="divs14" class="pattern-dot2" data-index2="14"></div>
-                <div id="divs15" class="pattern-dot2" data-index2="15"></div>
-                <div id="divs16" class="pattern-dot2" data-index2="16"></div>
-                <div id="divs17" class="pattern-dot2" data-index2="17"></div>
-                <div id="divs18" class="pattern-dot2" data-index2="18"></div>
-                <div id="divs19" class="pattern-dot2" data-index2="19"></div>
-                <div id="divs20" class="pattern-dot2" data-index2="20"></div>
-                <div id="divhidden"></div>
-                <div id="check2" class="pattern-dot2" data-index2="refresh">Check</div>
-                <div id="divhidden"></div>
-                <div id="generate-button2" class="pattern-dot2" data-index2="refresh">New Game</div>
-                <div id="divhidden"></div>
+                <div class="play-screen">
+                    <div class="pattern-grid" id="patternGrid">
+                        <div id="div1" class="pattern-dot" data-index="1" aria-label="Button 1"></div>
+                        <div id="div2" class="pattern-dot" data-index="2" aria-label="Button 2"></div>
+                        <div id="div3" class="pattern-dot" data-index="3" aria-label="Button 3"></div>
+                        <div id="div4" class="pattern-dot" data-index="4" aria-label="Button 4"></div>
+                        <div id="div5" class="pattern-dot" data-index="5" aria-label="Button 5"></div>
+                        <div id="div6" class="pattern-dot" data-index="6" aria-label="Button 6"></div>
+                        <div id="div7" class="pattern-dot" data-index="7" aria-label="Button 7"></div>
+                        <div id="div8" class="pattern-dot" data-index="8" aria-label="Button 8"></div>
+                        <div id="check" class="pattern-dot" data-index="refresh" aria-label="Button check">Check</div>
+                        <div id="div9" class="pattern-dot" data-index="9" aria-label="Button 9"></div>
+                        <div id="div10" class="pattern-dot" data-index="10" aria-label="Button 10"></div>
+                        <div id="generate-button" class="pattern-dot" data-index="refresh" aria-label="Button new game">
+                            New Game</div>
 
-                <div class="">
 
-                    <!--Caterpillar2-->
+                        <!--Caterpillar-->
 
-                    <div class="caterpillar2">
+                    </div>
+
+                    <div class="caterpillar">
 
 
                         <div class="cater">
-                            <div class="body" id="body-part2-1" data-index="1">
+                            <div class="body" id="body-part-1" data-index="1">
                                 <div class="face"></div>
 
-                                <div class="body p1" id="body-part2-2" data-index="2"></div>
-                                <div class="body p2" id="body-part2-3" data-index="3"></div>
-                                <div class="body p3" id="body-part2-4" data-index="4"></div>
-                                <div class="body p4" id="body-part2-5" data-index="5"></div>
-                                <div class="body p5" id="body-part2-6" data-index="6"></div>
-                                <div class="body p6" id="body-part2-7" data-index="7"></div>
-                                <div class="body p7" id="body-part2-8" data-index="8"></div>
-                                <div class="body p8" id="body-part2-9" data-index="9"></div>
-                                <div class="body p9" id="body-part2-10" data-index="10"></div>
-                                <div class="body p10" id="body-part2-11" data-index="11"></div>
-                                <div class="body p11" id="body-part2-12" data-index="12"></div>
-                                <div class="body p12" id="body-part2-13" data-index="13"></div>
-                                <div class="body p13" id="body-part2-14" data-index="14"></div>
-                                <div class="body p14" id="body-part2-15" data-index="15"></div>
-                                <div class="body p15" id="body-part2-16" data-index="16"></div>
-                                <div class="body p16" id="body-part2-17" data-index="17"></div>
-                                <div class="body p17" id="body-part2-18" data-index="18"></div>
-                                <div class="body p18" id="body-part2-19" data-index="19"></div>
-                                <div class="body p19" id="body-part2-20" data-index="20"></div>
+                                <div class="body p1" id="body-part-2" data-index="2"></div>
+                                <div class="body p2" id="body-part-3" data-index="3"></div>
+                                <div class="body p3" id="body-part-4" data-index="4"></div>
+                                <div class="body p4" id="body-part-5" data-index="5"></div>
+                                <div class="body p5" id="body-part-6" data-index="6"></div>
+                                <div class="body p6" id="body-part-7" data-index="7"></div>
+                                <div class="body p7" id="body-part-8" data-index="8"></div>
+                                <div class="body p8" id="body-part-9" data-index="9"></div>
+                                <div class="body p9" id="body-part-10" data-index="10"></div>
 
                             </div>
 
@@ -227,53 +146,145 @@
 
                         </div>
                     </div>
+
                 </div>
-            </div>
+            </section>
+            <section>
+
+
+                <!--Level 2-->
+
+                <div class="level2">
+
+                    <div class="pattern-grid2" id="patternGrid2">
+
+                        <div id="divs1" class="pattern-dot2" data-index2="1" aria-label="Button 1"></div>
+                        <div id="divs2" class="pattern-dot2" data-index2="2" aria-label="Button 2"></div>
+                        <div id="divs3" class="pattern-dot2" data-index2="3" aria-label="Button 3"></div>
+                        <div id="divs4" class="pattern-dot2" data-index2="4" aria-label="Button 4"></div>
+                        <div id="divs5" class="pattern-dot2" data-index2="5" aria-label="Button 5"></div>
+                        <div id="divs6" class="pattern-dot2" data-index2="6" aria-label="Button 6"></div>
+                        <div id="divs7" class="pattern-dot2" data-index2="7" aria-label="Button 7"></div>
+                        <div id="divs8" class="pattern-dot2" data-index2="8" aria-label="Button 8"></div>
+                        <div id="divs9" class="pattern-dot2" data-index2="9" aria-label="Button 9"></div>
+                        <div id="divs10" class="pattern-dot2" data-index2="10" aria-label="Button 10"></div>
+                        <div id="divs11" class="pattern-dot2" data-index2="11" aria-label="Button 11"></div>
+                        <div id="divs12" class="pattern-dot2" data-index2="12" aria-label="Button 12"></div>
+                        <div id="divs13" class="pattern-dot2" data-index2="13" aria-label="Button 13"></div>
+                        <div id="divs14" class="pattern-dot2" data-index2="14" aria-label="Button 14"></div>
+                        <div id="divs15" class="pattern-dot2" data-index2="15" aria-label="Button 15"></div>
+                        <div id="divs16" class="pattern-dot2" data-index2="16" aria-label="Button 16"></div>
+                        <div id="divs17" class="pattern-dot2" data-index2="17" aria-label="Button 17"></div>
+                        <div id="divs18" class="pattern-dot2" data-index2="18" aria-label="Button 18"></div>
+                        <div id="divs19" class="pattern-dot2" data-index2="19" aria-label="Button 19"></div>
+                        <div id="divs20" class="pattern-dot2" data-index2="20" aria-label="Button 20"></div>
+                        <div id="divhidden"></div>
+                        <div id="check2" class="pattern-dot2" data-index2="refresh" aria-label="Button check">Check
+                        </div>
+                        <div class="divhidden"></div>
+                        <div id="generate-button2" class="pattern-dot2" data-index2="refresh"
+                            aria-label="Button new game">New Game</div>
+                        <div class="divhidden"></div>
+
+                        <div class="">
+
+                            <!--Caterpillar2-->
+
+                            <div class="caterpillar2">
+
+
+                                <div class="cater">
+                                    <div class="body" id="body-part2-1" data-index="1">
+                                        <div class="face"></div>
+
+                                        <div class="body p1" id="body-part2-2" data-index="2"></div>
+                                        <div class="body p2" id="body-part2-3" data-index="3"></div>
+                                        <div class="body p3" id="body-part2-4" data-index="4"></div>
+                                        <div class="body p4" id="body-part2-5" data-index="5"></div>
+                                        <div class="body p5" id="body-part2-6" data-index="6"></div>
+                                        <div class="body p6" id="body-part2-7" data-index="7"></div>
+                                        <div class="body p7" id="body-part2-8" data-index="8"></div>
+                                        <div class="body p8" id="body-part2-9" data-index="9"></div>
+                                        <div class="body p9" id="body-part2-10" data-index="10"></div>
+                                        <div class="body p10" id="body-part2-11" data-index="11"></div>
+                                        <div class="body p11" id="body-part2-12" data-index="12"></div>
+                                        <div class="body p12" id="body-part2-13" data-index="13"></div>
+                                        <div class="body p13" id="body-part2-14" data-index="14"></div>
+                                        <div class="body p14" id="body-part2-15" data-index="15"></div>
+                                        <div class="body p15" id="body-part2-16" data-index="16"></div>
+                                        <div class="body p16" id="body-part2-17" data-index="17"></div>
+                                        <div class="body p17" id="body-part2-18" data-index="18"></div>
+                                        <div class="body p18" id="body-part2-19" data-index="19"></div>
+                                        <div class="body p19" id="body-part2-20" data-index="20"></div>
+
+                                    </div>
+
+                                    <div class="antenna-l"></div>
+                                    <div class="antenna-r"></div>
+
+                                    <div class="design">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!--Footer-->
+
+    <footer>
+        <div>
+            <p> For more learning games visit our social media!</p>
+
+            <ul class="social-networks">
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our YouTube page (opens in a new tab)"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+            <p>
+                Copyright &copy;
+                <a href="https://github.com/Johns-Costa" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit the desingner github page (opens in a new tab)">João Costa</a>
+                2023
+            </p>
         </div>
 
-        <!--Footer-->
+    </footer>
 
-        <footer>
-            <div>
-                <p> For more learning games visit our social media!</p>
+    <!-- font awesome script  -->
+    <script src="https://kit.fontawesome.com/ee66e0a866.js" crossorigin="anonymous"></script>
 
-                <ul class="social-networks">
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Twitter page (opens in a new tab)"><i
-                                class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank" rel="noopener"
-                            aria-label="Visit our YouTube page (opens in a new tab)"><i
-                                class="fa-brands fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener"
-                            aria-label="Visit our Instagram page (opens in a new tab)"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </li>
-                </ul>
-                <p>
-                    Copyright &copy;
-                    <a href="https://github.com/Johns-Costa" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visit the desingner github page (opens in a new tab)">João Costa</a>
-                    2023
-                </p>
-            </div>
-
-        </footer>
-
-        <!-- font awesome script  -->
-        <script src="https://kit.fontawesome.com/ee66e0a866.js" crossorigin="anonymous"></script>
-
-        <!--Script-->
-        <script src="assets/js/script.js"></script>
+    <!--Script-->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
