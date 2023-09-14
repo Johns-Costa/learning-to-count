@@ -91,6 +91,26 @@ main {
     justify-content: center;
 }
 
+.score-area {
+    display: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+.scores {
+    padding: 20px;
+}
+
+#score {
+    border: solid 2px white;
+    padding: 0 10px;
+}
+
+#incorrect {
+    border: solid 2px white;
+    padding: 0 10px;
+}
+
 .main-menu {
     display: flex;
     flex-direction: column;
@@ -207,7 +227,7 @@ main {
 
 .caterpillar {
     height: 13rem;
-    margin-left: 60px;
+    margin-left: 170px;
     padding: 50px;
 
 }
@@ -215,6 +235,7 @@ main {
 .caterpillar2 {
     height: 17rem;
     padding-top: 70px;
+    padding-left: 30px;
 }
 
 .cater {

@@ -1,8 +1,5 @@
 const patternGrid = document.getElementById('patternGrid');
 const patternGrid2 = document.getElementById('patternGrid2');
-
-const message = document.getElementById('message');
-const message2 = document.getElementById('message2');
 let selectedPattern = [];
 let selectedPattern2 = [];
 const pattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -17,6 +14,7 @@ let level1 = document.getElementById("level-1");
 const level = document.querySelector(".level");
 let home = document.getElementById("home");
 const homebtn = document.querySelector(".home");
+const score = document.querySelector('.score-area');
 
 
 //Play Button
@@ -26,6 +24,7 @@ playBtn.addEventListener("click", () => {
     playLevel2.style.display = 'none';
     level.style.display = 'block';
     homebtn.style.display = 'block';
+    score.style.display = 'flex';
     newGame();
     level1.classList.toggle('is-active');
 
@@ -92,7 +91,6 @@ function clearPattern() {
     selectedPattern = [];
     let dots = document.querySelectorAll('.pattern-dot');
     dots.forEach(dot => dot.style.backgroundColor = '#ccc');
-    message.innerText = '';
     var elements = document.getElementsByClassName("body");
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.backgroundColor = "lightgreen";
@@ -101,9 +99,11 @@ function clearPattern() {
 
 function checkPattern() {
     if (selectedPattern.join() === pattern.join()) {
-        message.textContent = 'Pattern unlocked!';
+        alert("Congratulations! You got it right!");
+        incrementScore();
     } else {
-        message.textContent = 'Pattern incorrect. Try again.';
+        alert(`You got it wrong. Try again! :)`);
+        incrementWrongAnswer();
     }
 }
 
@@ -144,7 +144,6 @@ function clearPattern2() {
     selectedPattern2 = [];
     let dots2 = document.querySelectorAll('.pattern-dot2');
     dots2.forEach(dot2 => dot2.style.backgroundColor = '#ccc');
-    message2.innerText = '';
     var elements = document.getElementsByClassName("body");
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.backgroundColor = "lightgreen";
@@ -154,9 +153,11 @@ function clearPattern2() {
 
 function checkPattern2() {
     if (selectedPattern2.join() === pattern2.join()) {
-        message2.textContent = 'Pattern unlocked!';
+        alert(`You got it wrong. Try again! :)`);
+        incrementWrongAnswer();
     } else {
-        message2.textContent = 'Pattern incorrect. Try again.';
+        alert(`You got it wrong. Try again! :)`);
+        incrementWrongAnswer();
     }
 }
 
@@ -259,3 +260,23 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
+}
+
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
+function incrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
+
+}
