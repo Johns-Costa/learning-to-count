@@ -29,3 +29,25 @@
 - As a mobile device and tablet user, I want the game to be responsive, so I can use my phone or tablet to keep learning.
 
 ---
+
+## Features
+
+### Main page
+
+- ##### Header
+
+  - Positioned top of the page.
+  - The header gives the user the tittle which self explaind the goal of the game
+
+- ##### Play and Rules Buttons
+
+  - Positioned center of the page.
+  - The Play button lead the user to the play area.
+  - The Rules button leads the user the the rules modal.
+  - The Buttons have hovering effects in order to be more interactive.
+
+  ![Play and Rules Buttons](assets/images/Main-buttons-desktop.png)
+  ![Play and Rules Buttons](assets/images/Main-buttons-tablet.png)
+  ![Play and Rules Buttons](assets/images/Main-buttons-mobile.png)
+
+---

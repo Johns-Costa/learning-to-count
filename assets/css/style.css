@@ -92,11 +92,13 @@ main {
     display: none;
     flex-direction: column;
     justify-content: center;
+    color: #2F4F4F;
 }
 
 .level2 {
     display: none;
     justify-content: center;
+    color: #2F4F4F;
 }
 
 .score-area {
