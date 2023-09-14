@@ -1,3 +1,5 @@
+/* --------- Global style */
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,6 +14,7 @@ body {
     line-height: 0.7em;
 }
 
+/* --------- Heading */
 
 main {
     display: flex;
@@ -20,6 +23,7 @@ main {
     flex: 1 0 auto;
 }
 
+/* --------- Game layout */
 .pattern-grid {
     display: grid;
     grid-template-columns: repeat(4, 50px);
@@ -100,6 +104,11 @@ main {
     padding: 20px;
 }
 
+.home {
+    display: none;
+    margin-top: 30px;
+}
+
 .scores {
     padding: 20px;
 }
@@ -114,119 +123,8 @@ main {
     padding: 0 10px;
 }
 
-.main-menu {
-    display: flex;
-    flex-direction: column;
-}
 
-.main-menu button {
-    margin: .5rem;
-    width: 20rem;
-    height: 4rem;
-    border-radius: .5rem;
-    outline: none;
-    border: none;
-    color: white;
-    font-family: cursive;
-    font-size: 2rem;
-    background-color: #2F4F4F;
-    border-color: white;
-    border: 2px solid white;
-}
-
-.main-menu button:hover {
-    background-color: white;
-    color: #2F4F4F;
-}
-
-#check {
-    font-size: 70%;
-    border: 4px solid white;
-}
-
-#generate-button {
-    font-size: 70%;
-    border: 4px solid white;
-}
-
-
-#check2 {
-    font-size: 70%;
-    border: 4px solid white;
-}
-
-#generate-button2 {
-    font-size: 70%;
-    border: 4px solid white;
-}
-
-.level button {
-    margin: .1rem;
-    width: 10rem;
-    height: 2rem;
-    border-radius: .7rem;
-    outline: none;
-    border: none;
-    color: white;
-    font-family: cursive;
-    font-size: 2rem;
-    background-color: #2F4F4F;
-    border-color: white;
-    border: 2px solid white;
-}
-
-.level button:hover {
-    background-color: white;
-    color: #2F4F4F;
-}
-
-.home {
-    display: none;
-    margin-top: 30px;
-}
-
-.home button {
-    margin: .1rem;
-    width: 10rem;
-    height: 2rem;
-    border-radius: .7rem;
-    outline: none;
-    border: none;
-    color: white;
-    font-family: cursive;
-    font-size: 2rem;
-    background-color: #2F4F4F;
-    border-color: white;
-    border: 2px solid white;
-}
-
-.home button:hover {
-    background-color: white;
-    color: #2F4F4F;
-}
-
-
-#level-1 {
-    font-size: 70%;
-}
-
-#level-1.is-active {
-    background-color: white;
-    color: #2F4F4F;
-}
-
-#level-2 {
-    font-size: 70%;
-}
-
-#level-2.is-active {
-    background-color: white;
-    color: #2F4F4F;
-}
-
-#home {
-    font-size: 70%;
-}
+/* --------- Caterpillar */
 
 .caterpillar {
     height: 13rem;
@@ -493,9 +391,117 @@ main {
     left: 175px;
 }
 
+/* --------- Buttons */
+
+.home button {
+    margin: .1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: .7rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
+}
+
+.home button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+.level button {
+    margin: .1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: .7rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
+}
+
+.level button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#level-1 {
+    font-size: 70%;
+}
+
+#level-1.is-active {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#level-2 {
+    font-size: 70%;
+}
+
+#level-2.is-active {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#home {
+    font-size: 70%;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu button {
+    margin: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: #2F4F4F;
+    border-color: white;
+    border: 2px solid white;
+}
+
+.main-menu button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+#check {
+    font-size: 70%;
+    border: 4px solid white;
+}
+
+#generate-button {
+    font-size: 70%;
+    border: 4px solid white;
+}
 
 
-/* Modal */
+#check2 {
+    font-size: 70%;
+    border: 4px solid white;
+}
+
+#generate-button2 {
+    font-size: 70%;
+    border: 4px solid white;
+}
+
+/* ------ Modal */
 
 
 /* The Modal (background) */
@@ -522,7 +528,6 @@ main {
     /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -533,7 +538,6 @@ main {
     font-size: 70%;
 }
 
-/* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
@@ -548,7 +552,7 @@ main {
     cursor: pointer;
 }
 
-/* footer */
+/* -------- footer */
 
 footer {
     background-color: #2F4F4F;

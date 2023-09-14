@@ -47,8 +47,7 @@ level2.addEventListener("click", () => {
 level1.addEventListener("click", () => {
     mainMenu.style.display = 'none';
     playLevel2.style.display = 'none';
-    playScreen.style.display = 'flex';
-    score.style.display = 'none';
+    playScreen.style.display = 'grid';
     newGame();
     level1.classList.toggle('is-active');
     if (level2.classList.toggle('is-active')) {
@@ -65,6 +64,7 @@ home.addEventListener("click", () => {
     playLevel2.style.display = 'none';
     level.style.display = 'none';
     homebtn.style.display = 'none';
+    score.style.display = 'none';
 });
 
 //Level 1
