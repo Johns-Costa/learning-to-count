@@ -168,8 +168,8 @@
 
 - ##### JavaScript
 
-  - No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
-  ![Script](assets/images/Style-validator.png)
+  - No errors or warnings were found when passing through the official JSHINT validator.
+  ![Script](assets/images/Script-validator.png)
 
 - ##### Accessibility and performance
 
@@ -208,4 +208,3 @@
 #### Wireframes
 
 ![Wireframes](assets/images/wireframe-main.png)
-![Wireframes order](assets/images/wireframe-order.png)
